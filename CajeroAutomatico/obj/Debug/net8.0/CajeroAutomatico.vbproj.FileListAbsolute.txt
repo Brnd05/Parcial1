@@ -12,3 +12,4 @@ C:\Users\PC\OneDrive\Documentos\Programacion ll\Semana7\Parcial1\CajeroAutomatic
 C:\Users\PC\OneDrive\Documentos\Programacion ll\Semana7\Parcial1\CajeroAutomatico\obj\Debug\net8.0\CajeroAutomatico.pdb
 C:\Users\PC\OneDrive\Documentos\Programacion ll\Semana7\Parcial1\CajeroAutomatico\obj\Debug\net8.0\CajeroAutomatico.genruntimeconfig.cache
 C:\Users\PC\OneDrive\Documentos\Programacion ll\Semana7\Parcial1\CajeroAutomatico\obj\Debug\net8.0\ref\CajeroAutomatico.dll
+C:\Users\PC\OneDrive\Documentos\Programacion ll\Semana7\Parcial1\CajeroAutomatico\obj\Debug\net8.0\CajeroAutomatico.sourcelink.json

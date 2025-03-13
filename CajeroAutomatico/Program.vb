@@ -11,9 +11,11 @@ Module Program
         retirar = Console.ReadLine()
         If retirar Mod 5 = 0 Then 'Se verifica que la cantidad ingresada de como residuo 0 al dividirla entre 5 por medio el operador Mod
             saldo = saldo - retirar 'En caso de que retirar sea multiplo de 5 se resta la cantidad a retirar al saldo
+            Console.WriteLine("Se han retirado: " & retirar) 'Se muestra la cantidad retirada
             Console.WriteLine("Su saldo actual es de: " & saldo) 'Se muestra el saldo nuevo del usuario
         Else
-            Console.WriteLine("Solo se pueden retirar multiplos de 5") 'Si el retirar no dad como residuo 0 al dividirlo entre 5 se muestra este mensaje y no se hace el retiro
+            Console.WriteLine("Usted ingreso: " & retirar)
+            Console.WriteLine("Solo se pueden retirar numeros multiplos de 5") 'Si el retirar no dad como residuo 0 al dividirlo entre 5 se muestra este mensaje y no se hace el retiro
             Console.WriteLine("Su saldo actual es de: " & saldo)
         End If
     End Function
@@ -24,9 +26,9 @@ Module Program
         Console.WriteLine("Esto es un cajero automatico")
         While pass = False And intentos > 0 'En caso de no cumplirse con cualquiera de las dos condiciones el bucle se rompe
 
-            Console.WriteLine("Tien " & intentos & " intentos para acceder al cajero")
+            Console.WriteLine("Tiene " & intentos & " intentos para acceder al cajero") 'se muestra el numero de intentos que le quedan al usuario
             Console.Write("Ingrese su usuario: ")
-            Dim usuario = Console.ReadLine()
+            Dim usuario = Console.ReadLine() 'El usuario es inge y la contraseña es contra
             Console.Write("Ingrese su pin: ")
             Dim pin = Console.ReadLine()
 
