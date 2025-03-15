@@ -9,15 +9,19 @@ Module Program
         Console.WriteLine("Ingrese la cantidad a retirar, debe ser multiplo de 5")
         Dim retirar As Integer 'Variable que contendra la cantidad a retirar la cual sera ingresada por el usuario 
         retirar = Console.ReadLine()
-        If retirar Mod 5 = 0 Then 'Se verifica que la cantidad ingresada de como residuo 0 al dividirla entre 5 por medio el operador Mod
+        If saldo >= retirar AndAlso retirar Mod 5 = 0 Then 'Se verifica que la cantidad ingresada de como residuo 0 al dividirla entre 5 por medio el operador Mod
             saldo = saldo - retirar 'En caso de que retirar sea multiplo de 5 se resta la cantidad a retirar al saldo
             Console.WriteLine("Se han retirado: " & retirar) 'Se muestra la cantidad retirada
             Console.WriteLine("Su saldo actual es de: " & saldo) 'Se muestra el saldo nuevo del usuario
-        Else
+        ElseIf retirar Mod 5 <> 0 Then
             Console.WriteLine("Usted ingreso: " & retirar)
             Console.WriteLine("Solo se pueden retirar numeros multiplos de 5") 'Si el retirar no dad como residuo 0 al dividirlo entre 5 se muestra este mensaje y no se hace el retiro
             Console.WriteLine("Su saldo actual es de: " & saldo)
+        ElseIf saldo < retirar Or saldo < 0 Then
+            Console.WriteLine("No tiene saldo suficiente") 'Si el saldo es menor a 0 se muestra este mensaje y no se hace el retiro
+            Console.WriteLine("Su saldo actual es de: " & saldo)
         End If
+
     End Function
 
     Sub Main(args As String())
